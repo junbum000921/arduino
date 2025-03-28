@@ -1,5 +1,5 @@
 #include "DHT.h"
-#define DHTPIN 2    
+#define DHTPIN 7    
 #define DHTTYPE DHT11   // DHT 11
 #define motor 6
 int step=0;
@@ -34,5 +34,6 @@ void loop() {
     analogWrite(motor, 100);
   }
   Serial.println(di, 1);
+  delay(15);
   
 }

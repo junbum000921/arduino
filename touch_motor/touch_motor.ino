@@ -1,4 +1,4 @@
-#define touch 7
+#define touch 8
 #define motor 6
 int step=1;
 void setup() {
@@ -12,6 +12,7 @@ void loop() {
   analogWrite(motor, 100);
   if(value==HIGH){
     step++;
+  }
     switch(step){
 
       case 1:
@@ -36,6 +37,7 @@ void loop() {
 
 
     }
-  }
+    delay(200);
+  
   
 }
